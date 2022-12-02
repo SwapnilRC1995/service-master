@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lok-r5-9kX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAo-4e-CvW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Logged Out Dashboard-->
         <scene sceneID="zRe-9v-nuh">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="1bF-Ww-Utc" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="1bF-Ww-Utc" customClass="LoggedOutDashboard" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FjD-0B-s6d">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,10 +435,10 @@
             </objects>
             <point key="canvasLocation" x="725.95419847328242" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="DJQ-rE-zDh">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="r2J-7H-57P" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="r2J-7H-57P" customClass="SignUpViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lv9-sD-9Z1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -569,10 +569,10 @@
             </objects>
             <point key="canvasLocation" x="1461.8320610687022" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="uV3-ku-KpX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="EfR-Z6-DU5" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="EfR-Z6-DU5" customClass="SignInViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gm3-81-2xY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -702,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="2199" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Forget Password View Controller-->
         <scene sceneID="bkF-cT-1bT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ISD-wq-MNP" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ISD-wq-MNP" customClass="ForgetPasswordViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3z-Wj-oLH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -824,10 +824,10 @@
             </objects>
             <point key="canvasLocation" x="2925.9541984732823" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Logged In Dashboard View Controller-->
         <scene sceneID="kPe-xa-OHz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="3Cu-iU-9zl" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3Cu-iU-9zl" customClass="LoggedInDashboardViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cu-Yc-b54">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1117,10 +1117,10 @@
             </objects>
             <point key="canvasLocation" x="3672.5190839694656" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Service Details View Controller-->
         <scene sceneID="110-xx-1Dg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zMn-SH-Go5" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="zMn-SH-Go5" customClass="ServiceDetailsViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yGU-mK-YJX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1383,10 +1383,10 @@
             </objects>
             <point key="canvasLocation" x="4423.6641221374048" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--First Step View Controller-->
         <scene sceneID="L7O-vY-bDs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Lok-r5-9kX" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Lok-r5-9kX" customClass="FirstStepViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1R-Ni-hwj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1473,10 +1473,10 @@
             </objects>
             <point key="canvasLocation" x="5148.8549618320612" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Step View Controller-->
         <scene sceneID="IBY-L2-CWA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eAo-4e-CvW" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eAo-4e-CvW" customClass="SecondStepViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wNj-wz-aB4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1508,7 +1508,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="MCa-MC-jrE" kind="show" id="z0E-6F-dLt"/>
+                                    <segue destination="MCa-MC-jrE" kind="show" identifier="ToStepThree" id="z0E-6F-dLt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQL-Fk-1Xa">
@@ -1540,9 +1540,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ASAP">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectButtonBehaviour:" destination="eAo-4e-CvW" eventType="touchUpInside" id="RZm-9J-Tab"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCO-RG-7qB">
                                 <rect key="frame" x="266" y="296" width="111" height="66"/>
@@ -1550,9 +1553,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Anytime">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectButtonBehaviour:" destination="eAo-4e-CvW" eventType="touchUpInside" id="4JU-7x-Evb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KN-Oe-CUa">
                                 <rect key="frame" x="141" y="297" width="111" height="66"/>
@@ -1560,9 +1566,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="1 week">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectButtonBehaviour:" destination="eAo-4e-CvW" eventType="touchUpInside" id="zaN-5m-0hI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-IN-yNw">
                                 <rect key="frame" x="16" y="387" width="97" height="22"/>
@@ -1585,15 +1594,21 @@
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="2u9-WX-7Mm"/>
+                    <connections>
+                        <outlet property="anytime" destination="ZCO-RG-7qB" id="EXn-fH-qEK"/>
+                        <outlet property="asap" destination="mcl-V4-LZm" id="vXA-Bx-E5K"/>
+                        <outlet property="desc" destination="sce-Sk-dat" id="NOS-x1-IO9"/>
+                        <outlet property="week" destination="3KN-Oe-CUa" id="div-4S-abA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3y-7W-uSk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5909.160305343511" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Step View Controller-->
         <scene sceneID="JYD-6l-bOg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="MCa-MC-jrE" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MCa-MC-jrE" customClass="ThirdStepViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYC-mu-Wao">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1729,7 +1744,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Email">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
@@ -1739,7 +1754,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Text">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
@@ -1749,7 +1764,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Phone">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="baseBackgroundColor" red="0.90588235289999997" green="0.6588235294" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
@@ -1763,10 +1778,10 @@
             </objects>
             <point key="canvasLocation" x="6631" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth Step View Controller-->
         <scene sceneID="ZZl-Qw-yzt">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="VEf-Qc-Y4f" customClass="ViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="VEf-Qc-Y4f" customClass="FourthStepViewController" customModule="Service_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XvH-lW-FVe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1812,7 +1827,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-da-gHi">
                                 <rect key="frame" x="16" y="519" width="361" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Lorem ipsum dolor sit amet consectetur. Feugiat morbi enim etiam gravida non vitae. Est amet risus sagittis nisi nunc facilisi dapibus placerat sed. Vel eget bibendum nisl etiam. Suspendisse magna natoque adipiscing a fermentum amet vulputate elementum mi. Netus mi eget tortor amet vitae egestas. Dolor amet libero a sit vestibulum eget non duis nec. Lorem ipsum dolor sit amet consectetur. Feugiat morbi enim etiam gravida non vitae. Est amet risus sagittis nisi nunc facilisi dapibus placerat sed. Vel eget bibendum nisl etiam. Suspendisse magna natoque adipiscing a fermentum amet vulputate elementum mi. Netus mi eget tortor amet vitae egestas. Dolor amet libero a sit vestibulum eget non duis nec.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit amet consectetur. Feugiat morbi enim etiam gravida non vitae. Est amet risus sagittis nisi nunc facilisi dapibus placerat sed. Vel eget bibendum nisl etiam. Suspendisse magna natoque adipiscing a fermentum amet vulputate elementum mi. Netus mi eget tortor amet vitae egestas. Dolor amet libero a sit vestibulum eget non duis nec. Lorem ipsum dolor sit amet consectetur. Feugiat morbi enim etiam gravida non vitae. Est amet risus sagittis nisi nunc facilisi dapibus placerat sed. Vel eget bibendum nisl etiam. Suspendisse magna natoque adipiscing a fermentum amet vulputate elementum mi. Netus mi eget tortor amet vitae egestas. Dolor amet libero a sit vestibulum eget non duis nec.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1925,10 +1940,10 @@ will conact you shortly.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wCu-4Z-QrI"/>
-        <segue reference="Opw-WX-hZf"/>
+        <segue reference="mva-ow-gCg"/>
         <segue reference="XiS-Pm-IVl"/>
-        <segue reference="3pA-Bl-xox"/>
-        <segue reference="FqW-0L-QC4"/>
+        <segue reference="5bC-OY-BsA"/>
+        <segue reference="5dv-jb-2iK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LandingImg" width="430" height="240"/>

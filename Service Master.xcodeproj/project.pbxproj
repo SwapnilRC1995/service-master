@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3906FAE5293A74F80055CA18 /* LoggedOutDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAE4293A74F80055CA18 /* LoggedOutDashboard.swift */; };
+		3906FAE7293A75920055CA18 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAE6293A75920055CA18 /* SignUpViewController.swift */; };
+		3906FAE9293A75A00055CA18 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAE8293A75A00055CA18 /* SignInViewController.swift */; };
+		3906FAEB293A75B00055CA18 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAEA293A75B00055CA18 /* ForgetPasswordViewController.swift */; };
+		3906FAED293A75CD0055CA18 /* LoggedInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAEC293A75CD0055CA18 /* LoggedInDashboardViewController.swift */; };
+		3906FAEF293A75E30055CA18 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAEE293A75E30055CA18 /* ServiceDetailsViewController.swift */; };
+		3906FAF1293A761F0055CA18 /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF0293A761F0055CA18 /* FirstStepViewController.swift */; };
+		3906FAF3293A762B0055CA18 /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF2293A762B0055CA18 /* SecondStepViewController.swift */; };
+		3906FAF5293A763A0055CA18 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF4293A763A0055CA18 /* ThirdStepViewController.swift */; };
+		3906FAF7293A76480055CA18 /* FourthStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF6293A76480055CA18 /* FourthStepViewController.swift */; };
 		39792F562937FD2500855EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39792F552937FD2500855EFB /* AppDelegate.swift */; };
 		39792F582937FD2500855EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39792F572937FD2500855EFB /* SceneDelegate.swift */; };
 		39792F5A2937FD2500855EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39792F592937FD2500855EFB /* ViewController.swift */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3906FAE4293A74F80055CA18 /* LoggedOutDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutDashboard.swift; sourceTree = "<group>"; };
+		3906FAE6293A75920055CA18 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3906FAE8293A75A00055CA18 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3906FAEA293A75B00055CA18 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		3906FAEC293A75CD0055CA18 /* LoggedInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInDashboardViewController.swift; sourceTree = "<group>"; };
+		3906FAEE293A75E30055CA18 /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
+		3906FAF0293A761F0055CA18 /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
+		3906FAF2293A762B0055CA18 /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
+		3906FAF4293A763A0055CA18 /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
+		3906FAF6293A76480055CA18 /* FourthStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepViewController.swift; sourceTree = "<group>"; };
 		39792F522937FD2500855EFB /* Service Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39792F552937FD2500855EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39792F572937FD2500855EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +76,16 @@
 		39792F542937FD2500855EFB /* Service Master */ = {
 			isa = PBXGroup;
 			children = (
+				3906FAF6293A76480055CA18 /* FourthStepViewController.swift */,
+				3906FAF4293A763A0055CA18 /* ThirdStepViewController.swift */,
+				3906FAF2293A762B0055CA18 /* SecondStepViewController.swift */,
+				3906FAF0293A761F0055CA18 /* FirstStepViewController.swift */,
+				3906FAEE293A75E30055CA18 /* ServiceDetailsViewController.swift */,
+				3906FAEC293A75CD0055CA18 /* LoggedInDashboardViewController.swift */,
+				3906FAEA293A75B00055CA18 /* ForgetPasswordViewController.swift */,
+				3906FAE8293A75A00055CA18 /* SignInViewController.swift */,
+				3906FAE6293A75920055CA18 /* SignUpViewController.swift */,
+				3906FAE4293A74F80055CA18 /* LoggedOutDashboard.swift */,
 				39792F552937FD2500855EFB /* AppDelegate.swift */,
 				39792F572937FD2500855EFB /* SceneDelegate.swift */,
 				39792F592937FD2500855EFB /* ViewController.swift */,
@@ -138,9 +168,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3906FAED293A75CD0055CA18 /* LoggedInDashboardViewController.swift in Sources */,
 				39792F5A2937FD2500855EFB /* ViewController.swift in Sources */,
+				3906FAF7293A76480055CA18 /* FourthStepViewController.swift in Sources */,
+				3906FAE5293A74F80055CA18 /* LoggedOutDashboard.swift in Sources */,
+				3906FAE9293A75A00055CA18 /* SignInViewController.swift in Sources */,
 				39792F562937FD2500855EFB /* AppDelegate.swift in Sources */,
+				3906FAF1293A761F0055CA18 /* FirstStepViewController.swift in Sources */,
+				3906FAF5293A763A0055CA18 /* ThirdStepViewController.swift in Sources */,
+				3906FAEB293A75B00055CA18 /* ForgetPasswordViewController.swift in Sources */,
+				3906FAF3293A762B0055CA18 /* SecondStepViewController.swift in Sources */,
 				39792F582937FD2500855EFB /* SceneDelegate.swift in Sources */,
+				3906FAE7293A75920055CA18 /* SignUpViewController.swift in Sources */,
+				3906FAEF293A75E30055CA18 /* ServiceDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
