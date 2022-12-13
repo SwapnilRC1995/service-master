@@ -6,24 +6,81 @@
 //
 
 import UIKit
+import Firebase
+import SwiftyJSON
 
-class LoggedInDashboardViewController: UIViewController {
-
+class LoggedInDashboardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet var collectionView: UICollectionView!
+    private var mainServices: [Service] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
 
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        
+        collectionView.setCollectionViewLayout(layout, animated: true)
+        let ref: DatabaseReference! = Database.database().reference()
+        ref.observe(.value, with: { snapshot in
+            
+            for child in snapshot.children.allObjects as! [DataSnapshot]{
+                    let service = Service().parseJSON(JSON(child.value ?? []))
+                    self.mainServices.append(service)
+                }
+            self.collectionView.register(ServiceCollectionViewCell.self, forCellWithReuseIdentifier: ServiceCollectionViewCell.reuseIdentifier)
+            self.collectionView.delegate = self
+            self.collectionView.dataSource = self
+            self.collectionView.reloadData()
+                
+        })
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if(!self.mainServices.isEmpty){
+            return self.mainServices.count
+        }else{
+            return 10
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServiceCollectionViewCell.reuseIdentifier, for: indexPath) as! ServiceCollectionViewCell
+        
+        if(!self.mainServices.isEmpty){
+            
+            let title: [String] = self.mainServices.map({(service: Service) -> String in service.mainService})
+            if(cell.service != nil){
+                cell.service.setTitle(title[indexPath.row], for: .normal)
+                cell.service.setTitleColor(.black, for: .normal)
+                cell.service.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+                cell.data = self.mainServices[indexPath.row]
+                
+                cell.addButtonTapAction = { [self] in
+                    performSegue(withIdentifier: "gotoServiceDetailsPage", sender: mainServices[indexPath.row])
+                }
+            }
+        }
+        return cell
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 360, height: 49)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "gotoServiceDetailsPage"){
+            let destination = segue.destination as! ServiceDetailsViewController
+            destination.service = (sender as? Service)!
+        }
+    }
+    
+    @IBAction func signOut(_ sender: UIButton){
+        try? Auth.auth().signOut()
+        performSegue(withIdentifier: "logOutSuccess", sender: self)
+    }
 }

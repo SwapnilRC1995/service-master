@@ -9,21 +9,47 @@ import UIKit
 
 class FirstStepViewController: UIViewController {
 
+    @IBOutlet var postalCodeField: UITextField!
+    @IBOutlet var gotoStepTwo: UIButton!
+    
+    var selectedService: SelectedService!
+    
+    var customerServiceRequestDetails: CustomerServiceRequestDetails!
+    
+    var isFromNextStep: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if(isFromNextStep){
+            postalCodeField.text = customerServiceRequestDetails.postalCode
+        }else{
+            customerServiceRequestDetails = CustomerServiceRequestDetails()
+            customerServiceRequestDetails.selectedService = selectedService
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func nextStepButtonPressed(_ sender: UIButton){
+        if(postalCodeField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != ""){
+            customerServiceRequestDetails.postalCode = postalCodeField!.text
+            performSegue(withIdentifier: "ToStepTwo", sender: self)
+        }else{
+            showAlertWithMessage("Sorry, Postal Code cannot be empty")
+        }
+        
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "ToStepTwo"){
+            let destination = segue.destination as! SecondStepViewController
+            destination.customerServiceRequestDetails = customerServiceRequestDetails
+        }
+    }
+
+    func showAlertWithMessage(_ message: String){
+        let alert = UIAlertController(title: "Oops! Our service providers need it", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }

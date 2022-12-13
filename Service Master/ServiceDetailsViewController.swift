@@ -6,24 +6,65 @@
 //
 
 import UIKit
+import Firebase
+import SwiftyJSON
 
-class ServiceDetailsViewController: UIViewController {
+class ServiceDetailsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var serviceTitle: UILabel!
+    @IBOutlet var serviceDescription: UILabel!
+    var service: Service = Service()
+    private var options: [Option] = []
+    
+    var selectedService: SelectedService!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        
+        serviceTitle.text = service.mainService
+        serviceDescription.text = service.description
+        options = service.options
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return options.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServiceDetailsCollectionViewCell.reuseIdentifier, for: indexPath) as! ServiceDetailsCollectionViewCell
+        
+        if(!options.isEmpty){
+            if(cell.optionTitle != nil && cell.optionDescription != nil){
+                cell.optionTitle!.text = options[indexPath.row].name
+                cell.optionDescription!.text = options[indexPath.row].jobDescription
+                
+                cell.addBookNowButtonTapAction = { [self] in
+                    selectedService = SelectedService()
+                    selectedService.mainService = service.mainService
+                    selectedService.description = service.description
+                    selectedService.option = options[indexPath.row]
+                    performSegue(withIdentifier: "gotoFirstStepPage", sender: selectedService)
+                }
+            }
+        }
+        return cell;
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "gotoFirstStepPage"){
+            let destination = segue.destination as! FirstStepViewController
+            destination.selectedService = sender as? SelectedService
+        }
+    }
+    
+    @IBAction func signOut(_ sender: UIButton){
+        try? Auth.auth().signOut()
+        performSegue(withIdentifier: "logOutSuccess", sender: self)
+    }
+    
 }
