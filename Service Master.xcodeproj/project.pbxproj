@@ -17,7 +17,6 @@
 		3906FAF3293A762B0055CA18 /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF2293A762B0055CA18 /* SecondStepViewController.swift */; };
 		3906FAF5293A763A0055CA18 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF4293A763A0055CA18 /* ThirdStepViewController.swift */; };
 		3906FAF7293A76480055CA18 /* FourthStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906FAF6293A76480055CA18 /* FourthStepViewController.swift */; };
-		397181A52944302A000C2306 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 397181A42944302A000C2306 /* GoogleService-Info.plist */; };
 		397181A82944315D000C2306 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 397181A72944315D000C2306 /* FirebaseAuth */; };
 		397181AA2944315D000C2306 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 397181A92944315D000C2306 /* FirebaseAuthCombine-Community */; };
 		397181AC2944315D000C2306 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 397181AB2944315D000C2306 /* FirebaseDatabase */; };
@@ -35,7 +34,8 @@
 		39AB122729482F78001823C9 /* CustomerServiceRequestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AB122629482F77001823C9 /* CustomerServiceRequestDetails.swift */; };
 		39AD03E729462169006ECC88 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD03E629462169006ECC88 /* ServiceCollectionViewCell.swift */; };
 		39AD03E929463254006ECC88 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD03E829463254006ECC88 /* Service.swift */; };
-		F1468B83C1D46CE9C20AC2E7 /* Pods_Service_Master.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57320EC2A3BA1BA65C6B554C /* Pods_Service_Master.framework */; };
+		AF88A6A9294AD8DD0084EB47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF88A6A8294AD8DD0084EB47 /* GoogleService-Info.plist */; };
+		FD3C97CCE5BD9384EF5B5BE1 /* Pods_Service_Master.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5C72A418F32407905C6D77 /* Pods_Service_Master.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,6 @@
 		3906FAF2293A762B0055CA18 /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
 		3906FAF4293A763A0055CA18 /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
 		3906FAF6293A76480055CA18 /* FourthStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepViewController.swift; sourceTree = "<group>"; };
-		397181A42944302A000C2306 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39792F522937FD2500855EFB /* Service Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39792F552937FD2500855EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39792F572937FD2500855EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +63,10 @@
 		39AB122629482F77001823C9 /* CustomerServiceRequestDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceRequestDetails.swift; sourceTree = "<group>"; };
 		39AD03E629462169006ECC88 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AD03E829463254006ECC88 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		39BA344AA0DF58E4C4471621 /* Pods-Service Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Master.release.xcconfig"; path = "Target Support Files/Pods-Service Master/Pods-Service Master.release.xcconfig"; sourceTree = "<group>"; };
-		57320EC2A3BA1BA65C6B554C /* Pods_Service_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4EDD557637CA749719F7634 /* Pods-Service Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Master.debug.xcconfig"; path = "Target Support Files/Pods-Service Master/Pods-Service Master.debug.xcconfig"; sourceTree = "<group>"; };
+		54A50BC61991D302B15E7DE0 /* Pods-Service Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Master.release.xcconfig"; path = "Target Support Files/Pods-Service Master/Pods-Service Master.release.xcconfig"; sourceTree = "<group>"; };
+		AF88A6A8294AD8DD0084EB47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E184959B4EA411AD46D749D7 /* Pods-Service Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Master.debug.xcconfig"; path = "Target Support Files/Pods-Service Master/Pods-Service Master.debug.xcconfig"; sourceTree = "<group>"; };
+		EF5C72A418F32407905C6D77 /* Pods_Service_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				397181A82944315D000C2306 /* FirebaseAuth in Frameworks */,
 				397181B02944315D000C2306 /* FirebaseFirestore in Frameworks */,
 				397181AA2944315D000C2306 /* FirebaseAuthCombine-Community in Frameworks */,
-				F1468B83C1D46CE9C20AC2E7 /* Pods_Service_Master.framework in Frameworks */,
+				FD3C97CCE5BD9384EF5B5BE1 /* Pods_Service_Master.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 				39792F542937FD2500855EFB /* Service Master */,
 				39792F532937FD2500855EFB /* Products */,
 				5AD40A0C77AE3CFBE49EBB5E /* Pods */,
-				E68A0E49DEA2291978B3B3D6 /* Frameworks */,
+				4A36484F6FD1123C487EAC47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +107,7 @@
 		39792F542937FD2500855EFB /* Service Master */ = {
 			isa = PBXGroup;
 			children = (
-				397181A42944302A000C2306 /* GoogleService-Info.plist */,
+				AF88A6A8294AD8DD0084EB47 /* GoogleService-Info.plist */,
 				39792F632937FD2B00855EFB /* Info.plist */,
 				39792F552937FD2500855EFB /* AppDelegate.swift */,
 				39AB122629482F77001823C9 /* CustomerServiceRequestDetails.swift */,
@@ -135,21 +135,21 @@
 			path = "Service Master";
 			sourceTree = "<group>";
 		};
+		4A36484F6FD1123C487EAC47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5C72A418F32407905C6D77 /* Pods_Service_Master.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5AD40A0C77AE3CFBE49EBB5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C4EDD557637CA749719F7634 /* Pods-Service Master.debug.xcconfig */,
-				39BA344AA0DF58E4C4471621 /* Pods-Service Master.release.xcconfig */,
+				E184959B4EA411AD46D749D7 /* Pods-Service Master.debug.xcconfig */,
+				54A50BC61991D302B15E7DE0 /* Pods-Service Master.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E68A0E49DEA2291978B3B3D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				57320EC2A3BA1BA65C6B554C /* Pods_Service_Master.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,11 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39792F662937FD2C00855EFB /* Build configuration list for PBXNativeTarget "Service Master" */;
 			buildPhases = (
-				8DE21C0CAD648AC11A632AAE /* [CP] Check Pods Manifest.lock */,
+				8E9FB82D29A4673387F0C588 /* [CP] Check Pods Manifest.lock */,
 				39792F4E2937FD2500855EFB /* Sources */,
 				39792F4F2937FD2500855EFB /* Frameworks */,
 				39792F502937FD2500855EFB /* Resources */,
-				006570708BDEBC688AB595D5 /* [CP] Embed Pods Frameworks */,
+				2AFC8372E60BE60D7A24D6B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39792F622937FD2B00855EFB /* LaunchScreen.storyboard in Resources */,
-				397181A52944302A000C2306 /* GoogleService-Info.plist in Resources */,
+				AF88A6A9294AD8DD0084EB47 /* GoogleService-Info.plist in Resources */,
 				39792F5F2937FD2B00855EFB /* Assets.xcassets in Resources */,
 				39792F5D2937FD2500855EFB /* Main.storyboard in Resources */,
 			);
@@ -232,7 +232,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		006570708BDEBC688AB595D5 /* [CP] Embed Pods Frameworks */ = {
+		2AFC8372E60BE60D7A24D6B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,7 +249,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Service Master/Pods-Service Master-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DE21C0CAD648AC11A632AAE /* [CP] Check Pods Manifest.lock */ = {
+		8E9FB82D29A4673387F0C588 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,7 +438,7 @@
 		};
 		39792F672937FD2C00855EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4EDD557637CA749719F7634 /* Pods-Service Master.debug.xcconfig */;
+			baseConfigurationReference = E184959B4EA411AD46D749D7 /* Pods-Service Master.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +474,7 @@
 		};
 		39792F682937FD2C00855EFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39BA344AA0DF58E4C4471621 /* Pods-Service Master.release.xcconfig */;
+			baseConfigurationReference = 54A50BC61991D302B15E7DE0 /* Pods-Service Master.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
