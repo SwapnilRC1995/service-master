@@ -25,7 +25,7 @@ class Service{
             service.description = description
         }
         for opt in json["options"]{
-            var o = Option()
+            let o = Option()
             service.options.append(o.parseJSON(JSON(opt.1)))
         }
         
